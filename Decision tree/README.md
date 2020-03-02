@@ -26,6 +26,6 @@ of the range of the data.
 
 I would rate my work between 4-5.
 
-**Jus
+**Justification**
 I took a lot of time to complete the assignment and learned a lot about trees. I did do some smaller 
 steps to explore my tree with the second split function but ran out of time to really dive deep.
