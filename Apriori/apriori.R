@@ -19,7 +19,7 @@ inspect(head(rules_lift))
 
 appearance = list(default="rhs",lhs="soda")
 
-rules <- apriori (data=Groceries, parameter=list (supp=0.001,conf = 0.15,minlen=2), appearance = list(default="rhs",lhs="soda"))
+rules <- apriori (data=Groceries, parameter=list (supp=0.001,conf = 0.15,minlen=2), appearance = list(rhs="soda",lhs="shopping bags"))
 rule <- sort (rules, by="confidence", decreasing=TRUE)
 inspect(head(rule))
 
@@ -29,3 +29,5 @@ inspect(head(rule))
 # {canned fish,hygiene articles} => {whole milk}
 # {sausage} => {shopping bags}
 # {shopping bags} => {soda}
+
+itemFrequencyPlot(Groceries, topN=10, type="absolute", main="Item Frequency")
