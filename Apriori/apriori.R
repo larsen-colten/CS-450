@@ -5,6 +5,8 @@ data(Groceries);
 frequentItems <- eclat (Groceries, parameter = list(supp = 0.1, maxlen = 15))
 inspect(frequentItems)
 
+rules <- apriori (Groceries, parameter = list(supp = 0.001, conf = 0.5))
+
 rules_supp <- sort (rules, by="support", decreasing=TRUE)
 inspect(head(rules_supp))
 
@@ -13,6 +15,13 @@ inspect(head(rules_conf))
 
 rules_lift <- sort (rules, by="lift", decreasing=TRUE)
 inspect(head(rules_lift))
+
+
+appearance = list(default="rhs",lhs="soda")
+
+rules <- apriori (data=Groceries, parameter=list (supp=0.001,conf = 0.15,minlen=2), appearance = list(default="rhs",lhs="soda"))
+rule <- sort (rules, by="confidence", decreasing=TRUE)
+inspect(head(rule))
 
 # Interesting rules
 # {soda} => {other vegetables}
