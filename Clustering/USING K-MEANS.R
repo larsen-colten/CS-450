@@ -10,11 +10,11 @@ for (i in 1:25) {
 }
 plot(table)
 
-clusters = kmeans(data, 10)
+clusters = kmeans(data, 5)
 summary(clusters)
 clusters$centers
-#clusters$cluster
-#clusters$withinss
+clusters$cluster
+clusters$withinss
 clusters$tot.withinss
 
 library(cluster)
