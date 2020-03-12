@@ -16,4 +16,4 @@
 6. (See item 6)
 7. I noticed that Alaska is all by its self. Each cluster center seems to have one or two values that really stand out from the rest. Larger states seem to group together. Also some of the state that are in the same region are grouped together.
 
-I feelt that i completed all fo the requirment in an orderly and visable manner. I did not go above and bejond on the assignment because i am focusing on the group project.
+I feel that i completed all fo the requirment in an orderly and visable manner. I did not go above and bejond on the assignment because i am focusing on the group project.
